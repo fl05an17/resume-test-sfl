@@ -14,12 +14,11 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script type="text/javascript" src="{{ url_for('static',filename='script/script.js') }}"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer" />   
 </head>
 
 <body>
-    <section class="hero">
+    <section class="main">
         <div class="main-witdh">
             <header>
                 <div class="logo">
@@ -42,14 +41,25 @@
             </header>
 
             <div class="container">
-                <div class="hero-text">
+                <div class="main-text">
                     <h3>Hola!</h3>
-                    <h1>Yo soy <span>Santiago Florez</span></h1>
-                    <p>Ingeniero de sistemas de la universidad Católica Luis Amigo sede Medellín, con habilidades en los campos del Desarrollo Web y Móvil.
-                        He trabajado en proyectos como desarrollador Java Web con servicios Rest y Soap.
-                        Me considero una persona proactiva, carismática, y que le gusta aprender constantemente, con alta capacidad de escucha, comunicación y trabajó en equipo.
-                        Me encantaría encontrar nuevos desafíos creativos e innovadores, que me permitan superarme tanto de manera profesional como personal. Retos que me permitan aplicar mis conocimientos y habilidades, compartir experiencias y lo mas importante, que pueda seguir aprendiendo.
+                    <h1>Yo soy <span class="input"></span></h1>
+                    <div class="des-principal">
+                        <p>Ingeniero de sistemas de la universidad Católica Luis Amigo sede Medellín, con habilidades en
+                            los
+                            campos del Desarrollo Web y Móvil. He trabajado en proyectos como desarrollador Java Web con
+                            servicios Rest y Soap.
+                            Me considero una persona proactiva, carismática, y que le gusta aprender constantemente, con
+                            alta capacidad de escucha, comunicación y trabajó en equipo.
                         </p>
+                        <p>
+                            Me encantaría encontrar nuevos desafíos creativos e innovadores, que me permitan superarme
+                            tanto
+                            de manera profesional como personal. Retos que me permitan aplicar mis conocimientos y
+                            habilidades,
+                            compartir experiencias y lo mas importante, que pueda seguir aprendiendo.
+                        </p>
+                    </div>
                     <div class="social">
                         <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
@@ -57,12 +67,57 @@
                     </div>
                     <button type="button">Mas sobre mi</button>
                 </div>
-                <div>
-                    <p>c 2022 Santiago - Todos los derechos reservados.</p>
+                <div class="bottom">
+                    <p>© 2022 Santiago - Todos los derechos reservados.</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="main">
+        <div class="main-witdh">
+            <header></header>
+            <div class="container">
+                <div class="main-text">
+                    <h3>Hola!</h3>
+                    <h1>Yo soy <span class="input2"></span></h1>
+                    <div class="des-principal">
+                        <p>Ingeniero de sistemas de la universidad Católica Luis Amigo sede Medellín, con habilidades en
+                            los
+                            campos del Desarrollo Web y Móvil. He trabajado en proyectos como desarrollador Java Web con
+                            servicios Rest y Soap.
+                            Me considero una persona proactiva, carismática, y que le gusta aprender constantemente, con
+                            alta capacidad de escucha, comunicación y trabajó en equipo.
+                        </p>
+                        <p>
+                            Me encantaría encontrar nuevos desafíos creativos e innovadores, que me permitan superarme
+                            tanto
+                            de manera profesional como personal. Retos que me permitan aplicar mis conocimientos y
+                            habilidades,
+                            compartir experiencias y lo mas importante, que pueda seguir aprendiendo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="{{ url_for('static',filename='js/script.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".input", {
+            strings:[ "Human", "Colombiano", "Web Developer", "Java Developer"],
+            typeSpeed: 70,
+            backSpeed: 60,
+            loop: true
+        })
+        var typed2 = new Typed(".input2", {
+            strings:[ "Human", "Colombiano", "Web Developer", "Java Developer"],
+            typeSpeed: 70,
+            backSpeed: 60,
+            loop: true
+        })
+    </script>
 </body>
 
 </html>
